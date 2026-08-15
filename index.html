@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f97316" />
+    <title>오늘의 포커스 | Pomodoro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gowun+Dodum&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header>
+        <a class="brand" href="/" aria-label="오늘의 포커스 홈"><span>●</span> 오늘의 포커스</a>
+        <p>한 번에 한 가지에만 집중해요.</p>
+      </header>
+      <section class="timer-card" aria-labelledby="timer-label">
+        <div class="mode-row" role="tablist" aria-label="타이머 모드">
+          <button class="mode active" data-mode="focus" role="tab" aria-selected="true">집중</button>
+          <button class="mode" data-mode="shortBreak" role="tab" aria-selected="false">짧은 휴식</button>
+          <button class="mode" data-mode="longBreak" role="tab" aria-selected="false">긴 휴식</button>
+        </div>
+        <p id="timer-label" class="eyebrow">FOCUS SESSION</p>
+        <div class="timer-wrap">
+          <svg class="progress-ring" viewBox="0 0 240 240" aria-hidden="true"><circle class="ring-track" cx="120" cy="120" r="105" /><circle class="ring-progress" cx="120" cy="120" r="105" /></svg>
+          <time id="time" aria-live="polite">25:00</time>
+        </div>
+        <button id="start" class="start-button">시작하기 <span>→</span></button>
+        <button id="reset" class="reset-button">초기화</button>
+        <p id="status" class="status">첫 번째 집중을 시작해 볼까요?</p>
+      </section>
+      <section class="summary" aria-label="오늘의 기록">
+        <article><strong id="completed-count">0</strong><span>완료한 집중</span></article>
+        <article><strong id="minutes-count">0</strong><span>집중한 시간 (분)</span></article>
+        <article><strong id="streak-count">0</strong><span>연속 세션</span></article>
+      </section>
+      <p class="hint">Space로 시작/일시정지 · R로 초기화</p>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,7 +1,9 @@
-# GitHub Codespaces ♥️ Jupyter Notebooks
+## 오늘의 포커스
 
-Welcome to your shiny new codespace! We've got everything fired up and running for you to explore Python and Jupyter notebooks.
+브라우저에서 바로 실행되는 한국어 뽀모도로 타이머입니다.
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with what you're seeing right now - where you go from here is up to you!
+- 25분 집중, 5분 짧은 휴식, 15분 긴 휴식
+- 완료한 집중 세션과 시간 기록
+- `Space`: 시작/일시정지, `R`: 초기화
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+`main` 브랜치에 푸시하면 GitHub Actions가 GitHub Pages로 자동 배포합니다.
