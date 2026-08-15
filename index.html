@@ -36,6 +36,27 @@
         <article><strong id="minutes-count">0</strong><span>집중한 시간 (분)</span></article>
         <article><strong id="streak-count">0</strong><span>연속 세션</span></article>
       </section>
+      <section class="contact-card" aria-labelledby="contact-title">
+        <p class="eyebrow">PARTNERSHIP</p>
+        <h2 id="contact-title">제휴 문의</h2>
+        <p>협업, 광고, 서비스 제안은 아래 양식으로 남겨 주세요.</p>
+        <form action="https://formspree.io/f/mdenlnve" method="POST">
+          <label>
+            이름 또는 회사명
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            이메일
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+          <label>
+            문의 내용
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <input type="hidden" name="_subject" value="오늘의 포커스 제휴 문의" />
+          <button class="contact-submit" type="submit">문의 보내기</button>
+        </form>
+      </section>
       <p class="hint">Space로 시작/일시정지 · R로 초기화</p>
     </main>
     <script src="app.js"></script>
