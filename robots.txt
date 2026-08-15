@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://minaribibimbap.github.io/pomodoro/sitemap.xml
