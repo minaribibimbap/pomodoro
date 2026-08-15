@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://minaribibimbap.github.io/pomodoro/sitemap.xml
+Sitemap: https://pomodoro-timer-d6n.pages.dev/sitemap.xml
